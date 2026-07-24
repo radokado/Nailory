@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #0f1115;
+  --color-dark-card: #161920;
+  --color-dark-card-lighter: #1e222b;
+  --color-dark-border: #2a2e39;
+  --color-rose-gold: #e6c594;
+  --color-rose-gold-light: #f2dcbe;
+  --color-rose-gold-dark: #cba36b;
+  --font-serif-luxury: 'Playfair Display', serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0f1115;
+    color: #f3f4f6;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Rose Gold Glow & Helper Utility Classes */
+.text-rose-gold {
+  color: #e6c594;
+}
+
+.bg-rose-gold {
+  background-color: #e6c594;
+}
+
+.border-rose-gold {
+  border-color: #e6c594;
+}
+
+.bg-dark-card {
+  background-color: #161920;
+}
+
+.bg-dark-card-lighter {
+  background-color: #1e222b;
+}
+
+/* Mobile Touch Target and PWA safe area support */
+.safe-area-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+/* Scrollbar Styling for Luxury Interface */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1115;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2e39;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6c594;
+}

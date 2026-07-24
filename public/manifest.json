@@ -1,0 +1,26 @@
+{
+  "short_name": "Nailory",
+  "name": "Nailory - Luxusný Salónny Asistent",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f1115",
+  "theme_color": "#0f1115",
+  "display": "standalone",
+  "orientation": "portrait",
+  "description": "Luxusný AI asistent a história klientiek pre profesionálne manikérky.",
+  "lang": "sk",
+  "categories": ["lifestyle", "business", "beauty"]
+}

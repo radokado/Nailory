@@ -1,0 +1,6 @@
+{
+  "name": "Nailory",
+  "description": "Luxusná PWA aplikácia pre manikérky a salóny - AI história klientiek, katalóg gélov a návrhy dizajnov.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

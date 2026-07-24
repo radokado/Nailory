@@ -1,0 +1,22 @@
+# wrangler.toml - Nailory Cloudflare Pages & Bindings Configuration
+name = "nailory"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-07-24"
+
+# Cloudflare D1 Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "nailory-db"
+database_id = "edfa8379-7fd4-4c8f-a8f8-1a16251b7840" # Nahraďte skutočným D1 ID po 'npx wrangler d1 create nailory-db'
+
+# Cloudflare R2 Storage Bucket Binding
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "nailory-photos"
+
+# Environment Variables & Secret Bindings (Gemini AI)
+[vars]
+GEMINI_MODEL = "gemini-2.5-flash"
+
+# Poznamka: Nastavte tajný kľúč Gemini API cez Wrangler CLI:
+# npx wrangler secret put GEMINI_API_KEY
